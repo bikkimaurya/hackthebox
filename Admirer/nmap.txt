@@ -1,0 +1,58 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2020-08-24 13:54 IST
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:54
+Completed NSE at 13:54, 0.00s elapsed
+Initiating NSE at 13:54
+Completed NSE at 13:54, 0.00s elapsed
+Initiating Ping Scan at 13:54
+Scanning 10.10.10.187 [4 ports]
+Completed Ping Scan at 13:54, 0.56s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:54
+Completed Parallel DNS resolution of 1 host. at 13:54, 0.05s elapsed
+Initiating SYN Stealth Scan at 13:54
+Scanning 10.10.10.187 [1000 ports]
+Discovered open port 80/tcp on 10.10.10.187
+Discovered open port 21/tcp on 10.10.10.187
+Discovered open port 22/tcp on 10.10.10.187
+Increasing send delay for 10.10.10.187 from 0 to 5 due to 157 out of 523 dropped probes since last increase.
+Completed SYN Stealth Scan at 13:55, 70.36s elapsed (1000 total ports)
+Initiating Service scan at 13:55
+Scanning 3 services on 10.10.10.187
+Completed Service scan at 13:55, 9.33s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.10.187.
+Initiating NSE at 13:55
+Stats: 0:01:28 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE: Active NSE Script Threads: 4 (4 waiting)
+NSE Timing: About 99.03% done; ETC: 13:55 (0:00:00 remaining)
+Completed NSE at 13:56, 31.88s elapsed
+Initiating NSE at 13:56
+Completed NSE at 13:56, 0.00s elapsed
+Nmap scan report for 10.10.10.187
+Host is up (0.38s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 4a:71:e9:21:63:69:9d:cb:dd:84:02:1a:23:97:e1:b9 (RSA)
+|   256 c5:95:b6:21:4d:46:a4:25:55:7a:87:3e:19:a8:e7:02 (ECDSA)
+|_  256 d0:2d:dd:d0:5c:42:f8:7b:31:5a:be:57:c4:a9:a7:56 (ED25519)
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/admin-dir
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Admirer
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 13:56
+Completed NSE at 13:56, 0.00s elapsed
+Initiating NSE at 13:56
+Completed NSE at 13:56, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 112.69 seconds
+           Raw packets sent: 1666 (73.280KB) | Rcvd: 1354 (120.323KB)

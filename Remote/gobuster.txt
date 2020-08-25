@@ -1,0 +1,31 @@
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://10.10.10.180
+[+] Threads:        10
+[+] Wordlist:       /usr/share/dirb/wordlists/common.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2020/08/24 08:11:25 Starting gobuster
+===============================================================
+/about-us (Status: 200)
+/Blog (Status: 200)
+/blog (Status: 200)
+/Contact (Status: 200)
+/contact (Status: 200)
+/home (Status: 200)
+/Home (Status: 200)
+/install (Status: 302)
+/intranet (Status: 200)
+/people (Status: 200)
+/People (Status: 200)
+/person (Status: 200)
+/products (Status: 200)
+/Products (Status: 200)
+/umbraco (Status: 200)==========cred found
+===============================================================
+2020/08/24 08:14:35 Finished
+===============================================================
